@@ -7,74 +7,83 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
+	<link rel="stylesheet" src="CSS-Animations-Demo/style.css">
     </head>
     <body>
 	
-		<div class="loading-screen">
-			<div>
-				<h1>IST 400</h1>
-				<div class="progress-bar">
-					<div></div>
-					<div></div>
-					<div></div>
-				</div>
+	<div class="loading-screen">
+		<div>
+			<h1>IST 400</h1>
+			<div class="progress-bar">
+				<div></div>
+				<div></div>
+				<div></div>
 			</div>
 		</div>
-		
-		<div class="main">
-			<header>
-				<h1>IST 400</h1>
-				<nav>
-					<ul>
-						<li>Menu</li>
-						<li>Reservations</li>
-						<li>Contact Us</li>
-						<li>Take Out</li>
-					</ul>
-				</nav>
-			</header>
-			
-			<div class="social-media">
+	</div>
+
+	<div class="main">
+		<header>
+			<h1>IST 400</h1>
+			<nav>
 				<ul>
-					<li><i class="fa fa-facebook"></i></li>
-					<li><i class="fa fa-twitter"></i></li>
-					<li><i class="fa fa-pinterest-p"></i></li>
-					<li><i class="fa fa-instagram"></i></li>
-				</ul>	
-			</div>
-			
-			<div class="slides">
-				<div class="slide one">
-					<div class="slide-image"></div>
-					<div class="slide-text">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit
-					</div>
-				</div>
-				<div class="slide two">
-					<div class="slide-image"></div>
-					<div class="slide-text">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit
-					</div>
-				</div>
-				<div class="slide three">
-					<div class="slide-image"></div>
-					<div class="slide-text">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit
-					</div>
-				</div>
-				<div class="slide four">
-					<div class="slide-image"></div>
-					<div class="slide-text">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit
-					</div>
-				</div>
-			</div>		
+					<li>Menu</li>
+					<li>Reservations</li>
+					<li>Contact Us</li>
+					<li>Take Out</li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="social-media">
+			<ul>
+				<li><i class="fa fa-facebook"></i></li>
+				<li><i class="fa fa-twitter"></i></li>
+				<li><i class="fa fa-pinterest-p"></i></li>
+				<li><i class="fa fa-instagram"></i></li>
+			</ul>	
 		</div>
 
-		<div style="display:none">			
-			http://www.oneabode.com/
-			http://www.ixo-architecture.fr/
-			http://www.symodd.com/
-		</div>
+		<div class="slides">
+			<div class="slide one">
+				<div class="slide-image"></div>
+				<div class="slide-text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit
+				</div>
+			</div>
+			<div class="slide two">
+				<div class="slide-image"></div>
+				<div class="slide-text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit
+				</div>
+			</div>
+			<div class="slide three">
+				<div class="slide-image"></div>
+				<div class="slide-text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit
+				</div>
+			</div>
+			<div class="slide four">
+				<div class="slide-image"></div>
+				<div class="slide-text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit
+				</div>
+			</div>
+		</div>		
+	</div>
+
+	<div style="display:none">			
+		http://www.oneabode.com/
+		http://www.ixo-architecture.fr/
+		http://www.symodd.com/
+	</div>
+	    <script>
+		$(function() {
+			$('.slides').slick({
+				arrows: false,
+				dots: true
+			});
+		});
+	    </script>
     </body>
 </html>
